@@ -1,0 +1,38 @@
+Reward breakdown @ 750,000 timesteps
+(averaged over the last ~750,000 env-steps; 750,000 samples)
+
+component          mean/step     share
+--------------------------------------
+r_vel                 0.8602     62.4%
+r_height              0.4336     31.4%
+r_alive               0.1000      7.3%
+r_airtime             0.0475      3.4%
+r_clearance           0.1411     10.2%
+r_phase               0.1110      8.0%
+r_orient             -0.0053     -0.4%
+r_angvel             -0.0714     -5.2%
+r_yaw                -0.0193     -1.4%
+r_action_rate        -0.0030     -0.2%
+r_torque             -0.0114     -0.8%
+r_jointvel           -0.1294     -9.4%
+r_pose               -0.0123     -0.9%
+r_abduct             -0.0201     -1.5%
+r_freq               -0.0403     -2.9%
+r_track              -0.0020     -0.1%
+--------------------------------------
+TOTAL                 1.3788
+
+mean forward velocity :  0.615 m/s
+mean torso height     :  0.305 m
+
+per-leg mean SWING clearance (m)  [rear << front = rears not lifting]:
+  FL : 0.1540
+  FR : 0.1633
+  RL : 0.1560
+  RR : 0.1509
+
+per-leg DUTY factor (stance fraction)  [rear >> front = rears propelling]:
+  FL : 0.624
+  FR : 0.626
+  RL : 0.620
+  RR : 0.619

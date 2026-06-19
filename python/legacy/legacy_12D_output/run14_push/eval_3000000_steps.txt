@@ -1,0 +1,8 @@
+Push-recovery eval @ 3,000,000 steps  (E:\STRIDE\python\checkpoints)
+episodes 24 | shove 90 N for 0.2s at t=2.0s | window 3.0s
+----------------------------------------------------
+fall rate            :   8.3%   (2/24)
+recovery rate        :  91.7%   (22/24)
+stayed up, unsteady  :   0.0%   (0/24)
+mean time-to-upright : 0.05 s
+mean dip (min height): 0.292 m

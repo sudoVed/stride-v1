@@ -1,0 +1,2058 @@
+<mujoco model="go2 scene box-terrain">
+  <include file="go2.xml"/>
+  <statistic center="0 0 0.1" extent="0.8"/>
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.3 0.3 0.3" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="-130" elevation="-20"/>
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3"
+      markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+  </asset>
+  <worldbody>
+    <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
+    <body name="tile_0" mocap="true" pos="-1.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_1" mocap="true" pos="-1.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_2" mocap="true" pos="-0.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_3" mocap="true" pos="0.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_4" mocap="true" pos="0.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_5" mocap="true" pos="1.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_6" mocap="true" pos="1.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_7" mocap="true" pos="2.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_8" mocap="true" pos="2.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_9" mocap="true" pos="3.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_10" mocap="true" pos="3.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_11" mocap="true" pos="4.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_12" mocap="true" pos="4.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_13" mocap="true" pos="5.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_14" mocap="true" pos="5.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_15" mocap="true" pos="6.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_16" mocap="true" pos="6.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_17" mocap="true" pos="7.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_18" mocap="true" pos="7.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_19" mocap="true" pos="8.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_20" mocap="true" pos="8.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_21" mocap="true" pos="9.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_22" mocap="true" pos="9.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_23" mocap="true" pos="10.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_24" mocap="true" pos="10.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_25" mocap="true" pos="11.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_26" mocap="true" pos="11.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_27" mocap="true" pos="12.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_28" mocap="true" pos="12.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_29" mocap="true" pos="13.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_30" mocap="true" pos="13.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_31" mocap="true" pos="14.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_32" mocap="true" pos="14.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_33" mocap="true" pos="15.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_34" mocap="true" pos="15.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_35" mocap="true" pos="16.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_36" mocap="true" pos="16.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_37" mocap="true" pos="17.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_38" mocap="true" pos="17.500 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_39" mocap="true" pos="18.000 -4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_40" mocap="true" pos="-1.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_41" mocap="true" pos="-1.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_42" mocap="true" pos="-0.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_43" mocap="true" pos="0.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_44" mocap="true" pos="0.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_45" mocap="true" pos="1.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_46" mocap="true" pos="1.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_47" mocap="true" pos="2.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_48" mocap="true" pos="2.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_49" mocap="true" pos="3.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_50" mocap="true" pos="3.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_51" mocap="true" pos="4.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_52" mocap="true" pos="4.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_53" mocap="true" pos="5.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_54" mocap="true" pos="5.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_55" mocap="true" pos="6.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_56" mocap="true" pos="6.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_57" mocap="true" pos="7.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_58" mocap="true" pos="7.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_59" mocap="true" pos="8.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_60" mocap="true" pos="8.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_61" mocap="true" pos="9.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_62" mocap="true" pos="9.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_63" mocap="true" pos="10.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_64" mocap="true" pos="10.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_65" mocap="true" pos="11.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_66" mocap="true" pos="11.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_67" mocap="true" pos="12.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_68" mocap="true" pos="12.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_69" mocap="true" pos="13.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_70" mocap="true" pos="13.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_71" mocap="true" pos="14.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_72" mocap="true" pos="14.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_73" mocap="true" pos="15.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_74" mocap="true" pos="15.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_75" mocap="true" pos="16.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_76" mocap="true" pos="16.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_77" mocap="true" pos="17.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_78" mocap="true" pos="17.500 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_79" mocap="true" pos="18.000 -3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_80" mocap="true" pos="-1.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_81" mocap="true" pos="-1.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_82" mocap="true" pos="-0.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_83" mocap="true" pos="0.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_84" mocap="true" pos="0.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_85" mocap="true" pos="1.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_86" mocap="true" pos="1.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_87" mocap="true" pos="2.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_88" mocap="true" pos="2.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_89" mocap="true" pos="3.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_90" mocap="true" pos="3.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_91" mocap="true" pos="4.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_92" mocap="true" pos="4.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_93" mocap="true" pos="5.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_94" mocap="true" pos="5.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_95" mocap="true" pos="6.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_96" mocap="true" pos="6.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_97" mocap="true" pos="7.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_98" mocap="true" pos="7.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_99" mocap="true" pos="8.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_100" mocap="true" pos="8.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_101" mocap="true" pos="9.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_102" mocap="true" pos="9.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_103" mocap="true" pos="10.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_104" mocap="true" pos="10.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_105" mocap="true" pos="11.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_106" mocap="true" pos="11.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_107" mocap="true" pos="12.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_108" mocap="true" pos="12.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_109" mocap="true" pos="13.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_110" mocap="true" pos="13.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_111" mocap="true" pos="14.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_112" mocap="true" pos="14.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_113" mocap="true" pos="15.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_114" mocap="true" pos="15.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_115" mocap="true" pos="16.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_116" mocap="true" pos="16.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_117" mocap="true" pos="17.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_118" mocap="true" pos="17.500 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_119" mocap="true" pos="18.000 -3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_120" mocap="true" pos="-1.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_121" mocap="true" pos="-1.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_122" mocap="true" pos="-0.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_123" mocap="true" pos="0.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_124" mocap="true" pos="0.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_125" mocap="true" pos="1.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_126" mocap="true" pos="1.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_127" mocap="true" pos="2.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_128" mocap="true" pos="2.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_129" mocap="true" pos="3.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_130" mocap="true" pos="3.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_131" mocap="true" pos="4.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_132" mocap="true" pos="4.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_133" mocap="true" pos="5.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_134" mocap="true" pos="5.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_135" mocap="true" pos="6.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_136" mocap="true" pos="6.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_137" mocap="true" pos="7.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_138" mocap="true" pos="7.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_139" mocap="true" pos="8.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_140" mocap="true" pos="8.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_141" mocap="true" pos="9.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_142" mocap="true" pos="9.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_143" mocap="true" pos="10.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_144" mocap="true" pos="10.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_145" mocap="true" pos="11.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_146" mocap="true" pos="11.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_147" mocap="true" pos="12.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_148" mocap="true" pos="12.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_149" mocap="true" pos="13.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_150" mocap="true" pos="13.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_151" mocap="true" pos="14.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_152" mocap="true" pos="14.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_153" mocap="true" pos="15.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_154" mocap="true" pos="15.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_155" mocap="true" pos="16.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_156" mocap="true" pos="16.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_157" mocap="true" pos="17.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_158" mocap="true" pos="17.500 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_159" mocap="true" pos="18.000 -2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_160" mocap="true" pos="-1.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_161" mocap="true" pos="-1.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_162" mocap="true" pos="-0.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_163" mocap="true" pos="0.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_164" mocap="true" pos="0.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_165" mocap="true" pos="1.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_166" mocap="true" pos="1.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_167" mocap="true" pos="2.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_168" mocap="true" pos="2.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_169" mocap="true" pos="3.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_170" mocap="true" pos="3.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_171" mocap="true" pos="4.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_172" mocap="true" pos="4.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_173" mocap="true" pos="5.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_174" mocap="true" pos="5.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_175" mocap="true" pos="6.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_176" mocap="true" pos="6.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_177" mocap="true" pos="7.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_178" mocap="true" pos="7.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_179" mocap="true" pos="8.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_180" mocap="true" pos="8.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_181" mocap="true" pos="9.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_182" mocap="true" pos="9.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_183" mocap="true" pos="10.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_184" mocap="true" pos="10.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_185" mocap="true" pos="11.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_186" mocap="true" pos="11.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_187" mocap="true" pos="12.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_188" mocap="true" pos="12.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_189" mocap="true" pos="13.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_190" mocap="true" pos="13.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_191" mocap="true" pos="14.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_192" mocap="true" pos="14.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_193" mocap="true" pos="15.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_194" mocap="true" pos="15.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_195" mocap="true" pos="16.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_196" mocap="true" pos="16.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_197" mocap="true" pos="17.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_198" mocap="true" pos="17.500 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_199" mocap="true" pos="18.000 -2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_200" mocap="true" pos="-1.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_201" mocap="true" pos="-1.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_202" mocap="true" pos="-0.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_203" mocap="true" pos="0.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_204" mocap="true" pos="0.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_205" mocap="true" pos="1.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_206" mocap="true" pos="1.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_207" mocap="true" pos="2.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_208" mocap="true" pos="2.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_209" mocap="true" pos="3.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_210" mocap="true" pos="3.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_211" mocap="true" pos="4.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_212" mocap="true" pos="4.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_213" mocap="true" pos="5.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_214" mocap="true" pos="5.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_215" mocap="true" pos="6.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_216" mocap="true" pos="6.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_217" mocap="true" pos="7.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_218" mocap="true" pos="7.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_219" mocap="true" pos="8.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_220" mocap="true" pos="8.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_221" mocap="true" pos="9.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_222" mocap="true" pos="9.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_223" mocap="true" pos="10.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_224" mocap="true" pos="10.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_225" mocap="true" pos="11.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_226" mocap="true" pos="11.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_227" mocap="true" pos="12.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_228" mocap="true" pos="12.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_229" mocap="true" pos="13.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_230" mocap="true" pos="13.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_231" mocap="true" pos="14.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_232" mocap="true" pos="14.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_233" mocap="true" pos="15.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_234" mocap="true" pos="15.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_235" mocap="true" pos="16.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_236" mocap="true" pos="16.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_237" mocap="true" pos="17.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_238" mocap="true" pos="17.500 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_239" mocap="true" pos="18.000 -1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_240" mocap="true" pos="-1.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_241" mocap="true" pos="-1.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_242" mocap="true" pos="-0.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_243" mocap="true" pos="0.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_244" mocap="true" pos="0.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_245" mocap="true" pos="1.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_246" mocap="true" pos="1.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_247" mocap="true" pos="2.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_248" mocap="true" pos="2.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_249" mocap="true" pos="3.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_250" mocap="true" pos="3.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_251" mocap="true" pos="4.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_252" mocap="true" pos="4.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_253" mocap="true" pos="5.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_254" mocap="true" pos="5.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_255" mocap="true" pos="6.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_256" mocap="true" pos="6.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_257" mocap="true" pos="7.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_258" mocap="true" pos="7.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_259" mocap="true" pos="8.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_260" mocap="true" pos="8.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_261" mocap="true" pos="9.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_262" mocap="true" pos="9.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_263" mocap="true" pos="10.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_264" mocap="true" pos="10.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_265" mocap="true" pos="11.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_266" mocap="true" pos="11.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_267" mocap="true" pos="12.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_268" mocap="true" pos="12.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_269" mocap="true" pos="13.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_270" mocap="true" pos="13.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_271" mocap="true" pos="14.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_272" mocap="true" pos="14.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_273" mocap="true" pos="15.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_274" mocap="true" pos="15.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_275" mocap="true" pos="16.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_276" mocap="true" pos="16.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_277" mocap="true" pos="17.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_278" mocap="true" pos="17.500 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_279" mocap="true" pos="18.000 -1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_280" mocap="true" pos="-1.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_281" mocap="true" pos="-1.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_282" mocap="true" pos="-0.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_283" mocap="true" pos="0.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_284" mocap="true" pos="0.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_285" mocap="true" pos="1.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_286" mocap="true" pos="1.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_287" mocap="true" pos="2.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_288" mocap="true" pos="2.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_289" mocap="true" pos="3.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_290" mocap="true" pos="3.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_291" mocap="true" pos="4.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_292" mocap="true" pos="4.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_293" mocap="true" pos="5.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_294" mocap="true" pos="5.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_295" mocap="true" pos="6.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_296" mocap="true" pos="6.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_297" mocap="true" pos="7.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_298" mocap="true" pos="7.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_299" mocap="true" pos="8.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_300" mocap="true" pos="8.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_301" mocap="true" pos="9.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_302" mocap="true" pos="9.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_303" mocap="true" pos="10.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_304" mocap="true" pos="10.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_305" mocap="true" pos="11.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_306" mocap="true" pos="11.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_307" mocap="true" pos="12.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_308" mocap="true" pos="12.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_309" mocap="true" pos="13.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_310" mocap="true" pos="13.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_311" mocap="true" pos="14.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_312" mocap="true" pos="14.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_313" mocap="true" pos="15.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_314" mocap="true" pos="15.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_315" mocap="true" pos="16.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_316" mocap="true" pos="16.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_317" mocap="true" pos="17.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_318" mocap="true" pos="17.500 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_319" mocap="true" pos="18.000 -0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_320" mocap="true" pos="-1.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_321" mocap="true" pos="-1.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_322" mocap="true" pos="-0.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_323" mocap="true" pos="0.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_324" mocap="true" pos="0.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_325" mocap="true" pos="1.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_326" mocap="true" pos="1.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_327" mocap="true" pos="2.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_328" mocap="true" pos="2.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_329" mocap="true" pos="3.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_330" mocap="true" pos="3.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_331" mocap="true" pos="4.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_332" mocap="true" pos="4.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_333" mocap="true" pos="5.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_334" mocap="true" pos="5.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_335" mocap="true" pos="6.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_336" mocap="true" pos="6.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_337" mocap="true" pos="7.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_338" mocap="true" pos="7.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_339" mocap="true" pos="8.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_340" mocap="true" pos="8.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_341" mocap="true" pos="9.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_342" mocap="true" pos="9.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_343" mocap="true" pos="10.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_344" mocap="true" pos="10.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_345" mocap="true" pos="11.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_346" mocap="true" pos="11.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_347" mocap="true" pos="12.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_348" mocap="true" pos="12.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_349" mocap="true" pos="13.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_350" mocap="true" pos="13.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_351" mocap="true" pos="14.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_352" mocap="true" pos="14.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_353" mocap="true" pos="15.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_354" mocap="true" pos="15.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_355" mocap="true" pos="16.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_356" mocap="true" pos="16.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_357" mocap="true" pos="17.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_358" mocap="true" pos="17.500 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_359" mocap="true" pos="18.000 0.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_360" mocap="true" pos="-1.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_361" mocap="true" pos="-1.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_362" mocap="true" pos="-0.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_363" mocap="true" pos="0.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_364" mocap="true" pos="0.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_365" mocap="true" pos="1.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_366" mocap="true" pos="1.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_367" mocap="true" pos="2.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_368" mocap="true" pos="2.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_369" mocap="true" pos="3.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_370" mocap="true" pos="3.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_371" mocap="true" pos="4.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_372" mocap="true" pos="4.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_373" mocap="true" pos="5.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_374" mocap="true" pos="5.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_375" mocap="true" pos="6.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_376" mocap="true" pos="6.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_377" mocap="true" pos="7.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_378" mocap="true" pos="7.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_379" mocap="true" pos="8.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_380" mocap="true" pos="8.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_381" mocap="true" pos="9.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_382" mocap="true" pos="9.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_383" mocap="true" pos="10.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_384" mocap="true" pos="10.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_385" mocap="true" pos="11.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_386" mocap="true" pos="11.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_387" mocap="true" pos="12.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_388" mocap="true" pos="12.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_389" mocap="true" pos="13.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_390" mocap="true" pos="13.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_391" mocap="true" pos="14.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_392" mocap="true" pos="14.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_393" mocap="true" pos="15.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_394" mocap="true" pos="15.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_395" mocap="true" pos="16.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_396" mocap="true" pos="16.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_397" mocap="true" pos="17.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_398" mocap="true" pos="17.500 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_399" mocap="true" pos="18.000 0.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_400" mocap="true" pos="-1.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_401" mocap="true" pos="-1.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_402" mocap="true" pos="-0.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_403" mocap="true" pos="0.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_404" mocap="true" pos="0.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_405" mocap="true" pos="1.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_406" mocap="true" pos="1.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_407" mocap="true" pos="2.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_408" mocap="true" pos="2.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_409" mocap="true" pos="3.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_410" mocap="true" pos="3.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_411" mocap="true" pos="4.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_412" mocap="true" pos="4.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_413" mocap="true" pos="5.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_414" mocap="true" pos="5.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_415" mocap="true" pos="6.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_416" mocap="true" pos="6.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_417" mocap="true" pos="7.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_418" mocap="true" pos="7.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_419" mocap="true" pos="8.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_420" mocap="true" pos="8.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_421" mocap="true" pos="9.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_422" mocap="true" pos="9.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_423" mocap="true" pos="10.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_424" mocap="true" pos="10.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_425" mocap="true" pos="11.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_426" mocap="true" pos="11.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_427" mocap="true" pos="12.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_428" mocap="true" pos="12.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_429" mocap="true" pos="13.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_430" mocap="true" pos="13.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_431" mocap="true" pos="14.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_432" mocap="true" pos="14.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_433" mocap="true" pos="15.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_434" mocap="true" pos="15.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_435" mocap="true" pos="16.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_436" mocap="true" pos="16.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_437" mocap="true" pos="17.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_438" mocap="true" pos="17.500 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_439" mocap="true" pos="18.000 1.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_440" mocap="true" pos="-1.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_441" mocap="true" pos="-1.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_442" mocap="true" pos="-0.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_443" mocap="true" pos="0.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_444" mocap="true" pos="0.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_445" mocap="true" pos="1.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_446" mocap="true" pos="1.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_447" mocap="true" pos="2.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_448" mocap="true" pos="2.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_449" mocap="true" pos="3.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_450" mocap="true" pos="3.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_451" mocap="true" pos="4.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_452" mocap="true" pos="4.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_453" mocap="true" pos="5.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_454" mocap="true" pos="5.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_455" mocap="true" pos="6.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_456" mocap="true" pos="6.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_457" mocap="true" pos="7.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_458" mocap="true" pos="7.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_459" mocap="true" pos="8.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_460" mocap="true" pos="8.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_461" mocap="true" pos="9.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_462" mocap="true" pos="9.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_463" mocap="true" pos="10.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_464" mocap="true" pos="10.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_465" mocap="true" pos="11.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_466" mocap="true" pos="11.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_467" mocap="true" pos="12.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_468" mocap="true" pos="12.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_469" mocap="true" pos="13.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_470" mocap="true" pos="13.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_471" mocap="true" pos="14.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_472" mocap="true" pos="14.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_473" mocap="true" pos="15.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_474" mocap="true" pos="15.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_475" mocap="true" pos="16.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_476" mocap="true" pos="16.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_477" mocap="true" pos="17.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_478" mocap="true" pos="17.500 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_479" mocap="true" pos="18.000 1.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_480" mocap="true" pos="-1.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_481" mocap="true" pos="-1.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_482" mocap="true" pos="-0.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_483" mocap="true" pos="0.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_484" mocap="true" pos="0.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_485" mocap="true" pos="1.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_486" mocap="true" pos="1.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_487" mocap="true" pos="2.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_488" mocap="true" pos="2.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_489" mocap="true" pos="3.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_490" mocap="true" pos="3.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_491" mocap="true" pos="4.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_492" mocap="true" pos="4.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_493" mocap="true" pos="5.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_494" mocap="true" pos="5.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_495" mocap="true" pos="6.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_496" mocap="true" pos="6.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_497" mocap="true" pos="7.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_498" mocap="true" pos="7.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_499" mocap="true" pos="8.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_500" mocap="true" pos="8.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_501" mocap="true" pos="9.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_502" mocap="true" pos="9.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_503" mocap="true" pos="10.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_504" mocap="true" pos="10.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_505" mocap="true" pos="11.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_506" mocap="true" pos="11.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_507" mocap="true" pos="12.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_508" mocap="true" pos="12.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_509" mocap="true" pos="13.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_510" mocap="true" pos="13.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_511" mocap="true" pos="14.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_512" mocap="true" pos="14.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_513" mocap="true" pos="15.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_514" mocap="true" pos="15.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_515" mocap="true" pos="16.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_516" mocap="true" pos="16.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_517" mocap="true" pos="17.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_518" mocap="true" pos="17.500 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_519" mocap="true" pos="18.000 2.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_520" mocap="true" pos="-1.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_521" mocap="true" pos="-1.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_522" mocap="true" pos="-0.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_523" mocap="true" pos="0.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_524" mocap="true" pos="0.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_525" mocap="true" pos="1.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_526" mocap="true" pos="1.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_527" mocap="true" pos="2.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_528" mocap="true" pos="2.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_529" mocap="true" pos="3.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_530" mocap="true" pos="3.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_531" mocap="true" pos="4.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_532" mocap="true" pos="4.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_533" mocap="true" pos="5.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_534" mocap="true" pos="5.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_535" mocap="true" pos="6.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_536" mocap="true" pos="6.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_537" mocap="true" pos="7.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_538" mocap="true" pos="7.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_539" mocap="true" pos="8.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_540" mocap="true" pos="8.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_541" mocap="true" pos="9.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_542" mocap="true" pos="9.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_543" mocap="true" pos="10.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_544" mocap="true" pos="10.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_545" mocap="true" pos="11.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_546" mocap="true" pos="11.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_547" mocap="true" pos="12.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_548" mocap="true" pos="12.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_549" mocap="true" pos="13.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_550" mocap="true" pos="13.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_551" mocap="true" pos="14.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_552" mocap="true" pos="14.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_553" mocap="true" pos="15.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_554" mocap="true" pos="15.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_555" mocap="true" pos="16.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_556" mocap="true" pos="16.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_557" mocap="true" pos="17.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_558" mocap="true" pos="17.500 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_559" mocap="true" pos="18.000 2.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_560" mocap="true" pos="-1.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_561" mocap="true" pos="-1.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_562" mocap="true" pos="-0.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_563" mocap="true" pos="0.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_564" mocap="true" pos="0.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_565" mocap="true" pos="1.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_566" mocap="true" pos="1.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_567" mocap="true" pos="2.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_568" mocap="true" pos="2.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_569" mocap="true" pos="3.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_570" mocap="true" pos="3.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_571" mocap="true" pos="4.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_572" mocap="true" pos="4.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_573" mocap="true" pos="5.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_574" mocap="true" pos="5.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_575" mocap="true" pos="6.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_576" mocap="true" pos="6.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_577" mocap="true" pos="7.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_578" mocap="true" pos="7.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_579" mocap="true" pos="8.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_580" mocap="true" pos="8.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_581" mocap="true" pos="9.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_582" mocap="true" pos="9.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_583" mocap="true" pos="10.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_584" mocap="true" pos="10.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_585" mocap="true" pos="11.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_586" mocap="true" pos="11.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_587" mocap="true" pos="12.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_588" mocap="true" pos="12.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_589" mocap="true" pos="13.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_590" mocap="true" pos="13.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_591" mocap="true" pos="14.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_592" mocap="true" pos="14.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_593" mocap="true" pos="15.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_594" mocap="true" pos="15.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_595" mocap="true" pos="16.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_596" mocap="true" pos="16.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_597" mocap="true" pos="17.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_598" mocap="true" pos="17.500 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_599" mocap="true" pos="18.000 3.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_600" mocap="true" pos="-1.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_601" mocap="true" pos="-1.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_602" mocap="true" pos="-0.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_603" mocap="true" pos="0.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_604" mocap="true" pos="0.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_605" mocap="true" pos="1.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_606" mocap="true" pos="1.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_607" mocap="true" pos="2.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_608" mocap="true" pos="2.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_609" mocap="true" pos="3.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_610" mocap="true" pos="3.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_611" mocap="true" pos="4.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_612" mocap="true" pos="4.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_613" mocap="true" pos="5.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_614" mocap="true" pos="5.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_615" mocap="true" pos="6.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_616" mocap="true" pos="6.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_617" mocap="true" pos="7.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_618" mocap="true" pos="7.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_619" mocap="true" pos="8.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_620" mocap="true" pos="8.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_621" mocap="true" pos="9.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_622" mocap="true" pos="9.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_623" mocap="true" pos="10.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_624" mocap="true" pos="10.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_625" mocap="true" pos="11.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_626" mocap="true" pos="11.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_627" mocap="true" pos="12.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_628" mocap="true" pos="12.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_629" mocap="true" pos="13.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_630" mocap="true" pos="13.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_631" mocap="true" pos="14.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_632" mocap="true" pos="14.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_633" mocap="true" pos="15.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_634" mocap="true" pos="15.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_635" mocap="true" pos="16.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_636" mocap="true" pos="16.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_637" mocap="true" pos="17.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_638" mocap="true" pos="17.500 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_639" mocap="true" pos="18.000 3.500 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_640" mocap="true" pos="-1.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_641" mocap="true" pos="-1.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_642" mocap="true" pos="-0.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_643" mocap="true" pos="0.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_644" mocap="true" pos="0.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_645" mocap="true" pos="1.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_646" mocap="true" pos="1.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_647" mocap="true" pos="2.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_648" mocap="true" pos="2.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_649" mocap="true" pos="3.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_650" mocap="true" pos="3.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_651" mocap="true" pos="4.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_652" mocap="true" pos="4.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_653" mocap="true" pos="5.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_654" mocap="true" pos="5.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_655" mocap="true" pos="6.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_656" mocap="true" pos="6.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_657" mocap="true" pos="7.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_658" mocap="true" pos="7.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_659" mocap="true" pos="8.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_660" mocap="true" pos="8.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_661" mocap="true" pos="9.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_662" mocap="true" pos="9.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_663" mocap="true" pos="10.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_664" mocap="true" pos="10.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_665" mocap="true" pos="11.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_666" mocap="true" pos="11.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_667" mocap="true" pos="12.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_668" mocap="true" pos="12.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_669" mocap="true" pos="13.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_670" mocap="true" pos="13.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_671" mocap="true" pos="14.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_672" mocap="true" pos="14.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_673" mocap="true" pos="15.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_674" mocap="true" pos="15.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_675" mocap="true" pos="16.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_676" mocap="true" pos="16.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_677" mocap="true" pos="17.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_678" mocap="true" pos="17.500 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+    <body name="tile_679" mocap="true" pos="18.000 4.000 -0.500">
+      <geom type="box" size="0.3 0.3 0.5" group="0" material="groundplane" friction="0.8 0.02 0.01" contype="1" conaffinity="2"/>
+    </body>
+  </worldbody>
+</mujoco>

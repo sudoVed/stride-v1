@@ -1,0 +1,52 @@
+# ── STRIDE .gitignore ───────────────────────────────────────────────────────
+
+# Python venv (rebuild from the setup commands in the README — ~900 MB, never commit)
+py12venv/
+
+# Python caches / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.ipynb_checkpoints/
+
+# Training working dir — train.py WIPES this at the start of every run (rename to keep a run)
+python/checkpoints/
+
+# TensorBoard event logs (binary, regenerable; un-ignore a run with `git add -f` if you want curves)
+python/runs/
+
+# Standalone MuJoCo C engine + simulate.exe binary (NOT needed for the Python RL stack;
+# the `mujoco` pip package bundles its own engine). Download separately if you want simulate.exe.
+mujoco/
+
+# Vendored third-party robot library — keep ONLY the Go2 model we actually modified/use.
+# (mujoco_menagerie is DeepMind's repo, ~2.4 GB, with its own .git — don't commit the whole thing.)
+mujoco_menagerie/*
+!mujoco_menagerie/unitree_go2/
+
+# Legacy milestone runs: commit ONLY each run's final-step blobs; drop intermediate checkpoints.
+# The `ppo_go2*_<step>_steps.*` form catches all three per-step files — model .zip,
+# vecnormalize .pkl, AND reward_breakdown .txt — in one rule. (eval_*.txt are kept as evidence.)
+python/legacy/**/ppo_go2*_0_steps.*
+python/legacy/**/ppo_go2*_750000_steps.*
+python/legacy/**/ppo_go2*_2250000_steps.*
+# 1.5M is the FINAL step for run15_recovery (keep it) but intermediate for every 3M run (drop those).
+python/legacy/legacy_12D_output/run8_gait/ppo_go2*_1500000_steps.*
+python/legacy/legacy_12D_output/run14_push/ppo_go2*_1500000_steps.*
+python/legacy/legacy_16D_output/run25_ftg/ppo_go2*_1500000_steps.*
+python/legacy/legacy_16D_output/run26_push_ftg/ppo_go2*_1500000_steps.*
+python/legacy/legacy_16D_output/run27_push_ftg/ppo_go2*_1500000_steps.*
+
+# Legacy: keep only each run's FINAL eval (drop the intermediate-step eval_*.txt files).
+# This leaves eval_3000000_steps.txt (the 3M runs) and run15_recovery's eval_0_steps.txt.
+python/legacy/**/eval_750000_steps.txt
+python/legacy/**/eval_1500000_steps.txt
+python/legacy/**/eval_2250000_steps.txt
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

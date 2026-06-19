@@ -1,0 +1,24 @@
+Reward breakdown @ 3,000,000 timesteps
+(averaged over the last ~750,000 env-steps; 750,000 samples)
+
+component          mean/step     share
+--------------------------------------
+r_vel                 1.3608     97.0%
+r_height              0.4204     30.0%
+r_alive               0.1000      7.1%
+r_airtime            -0.0017     -0.1%
+r_clearance           0.0989      7.1%
+r_gait                0.0000      0.0%
+r_orient             -0.0055     -0.4%
+r_angvel             -0.1958    -14.0%
+r_yaw                -0.0400     -2.9%
+r_action_rate        -0.0036     -0.3%
+r_torque             -0.0198     -1.4%
+r_jointvel           -0.2692    -19.2%
+r_pose               -0.0103     -0.7%
+r_abduct             -0.0316     -2.3%
+--------------------------------------
+TOTAL                 1.4024
+
+mean forward velocity :  0.673 m/s
+mean torso height     :  0.298 m

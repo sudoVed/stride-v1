@@ -1,0 +1,27 @@
+Push-recovery eval @ 3,000,000 steps  (E:\STRIDE\python\final)  [terrain 0.15 m]
+episodes 24 | shove 75 N for 0.2s at t=2.0s | window 3.0s
+----------------------------------------------------
+fall rate            :   0.0%   (0/24)
+recovery rate        : 100.0%   (24/24)
+stayed up, unsteady  :   0.0%   (0/24)
+mean time-to-upright : 0.16 s
+mean dip (min height): 0.285 m
+
+Push-recovery eval @ 3,000,000 steps  (E:\STRIDE\python\final)  [terrain 0.15 m]
+episodes 24 | shove 90 N for 0.2s at t=2.0s | window 3.0s
+----------------------------------------------------
+fall rate            :   8.3%   (2/24)
+recovery rate        :  91.7%   (22/24)
+stayed up, unsteady  :   0.0%   (0/24)
+mean time-to-upright : 0.16 s
+mean dip (min height): 0.280 m
+
+Push-recovery eval @ 3,000,000 steps  (E:\STRIDE\python\final)  [flat ground]
+episodes 24 | shove 90 N for 0.2s at t=2.0s | window 3.0s
+----------------------------------------------------
+fall rate            :   0.0%   (0/24)
+recovery rate        : 100.0%   (24/24)
+stayed up, unsteady  :   0.0%   (0/24)
+mean time-to-upright : 0.12 s
+mean dip (min height): 0.287 m
+
