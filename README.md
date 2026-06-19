@@ -187,12 +187,11 @@ analysis with real numbers → the next proposed change. Read them in order for 
 
 ---
 
-## What's next (notes for the next person)
+## What's next (for v2 maybe)
 
-- **Goal-directed locomotion:** the obs already carries a *commanded forward speed*. Generalize it to a
+- **Goal-directed locomotion:** The obs already carries a *commanded forward speed*. Generalize it to a
   **commanded direction** (a velocity vector or heading), feed the goal-relative direction, and the same
   policy steers toward a goal. Since that changes the obs shape, don't retrain from scratch — do **weight
   surgery** (copy existing weights into the larger network, zero-init the new input columns) and
   fine-tune; locomotion transfers, only steering is learned.
-- **Harder terrain:** raise `--terrain-height` and/or shorten `TERRAIN_OCTAVES` periods as a curriculum;
-  `terrain_preview.py` tells you when steps outgrow the foot (then enlarge the capsule).
+- **Integration with Robot Perception:** Extend the policy beyond proprioceptive control by incorporating exteroceptive observations (depth cameras / LiDAR / terrain maps), enabling the quadruped to perceive obstacles, terrain variations, and foothold availability for navigation in unknown environments.
